@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <title>WebDesvStudy</title>
+</head>
+
+<body>
+        <header class="header">
+                <h1 class="special-title">WebDevStudy Study path for web development</h1>
+             
+                
+        </header>
+        <!-- crea una una ul con dei link a collegamenti web-->
+        <div class="panel-link">
+                <ul class="link_list">
+                        
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">How
+                                        the web works MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Html
+                                        Basics MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS
+                                        Basics MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript
+                                        Basics MznDoc</a></li>
+                        <li class="panel"><a href="https://www.codecademy.com/resources/blog/what-is-dom/">what-is-dom</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables">JavaScript
+                                        Variables MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings">JavaScript
+                                        Strings Mzn</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">Javasctipt
+                                        Useful_string_methods_MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays">Javascript
+                                        Arrays
+                                        MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">Javascript
+                                        Control_flow_and_error_handling MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">JavaScript
+                                        conditionals MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en">JavaScript Control flow Loops MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions">Javascript
+                                        Functions MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values">JavaScript
+                                        return values Useful_string_methods_MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">JavaScript
+                                        Arrow_functions MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">Javascript
+                                        Events MznDoc</a></li>
+                        <li class="panel"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">Callback </a>
+                        </li>
+                        <li class="panel"><a href="https://www.w3schools.com/js/js_dom.asp">DOM</a></li>
+                        <li class="panel"><a href="https://www.w3schools.com/js/js_htmldom.asp">HTML DOM</a></li>
+                        <li class="panel"><a href="https://www.w3schools.com/js/js_es5.asp">ES5</a></li>
+        </div>
+        <div class="panel">
+                <h2>Le Differenze tra 'var' e 'let' in JavaScript</h2>
+
+                <p>Inizialmente in JavaScript, l'unico modo per dichiarare variabili era usando 'var'. Tuttavia, 'var'
+                        ha alcune
+                        caratteristiche che possono portare a confusione e errori. Di conseguenza, è stato introdotto
+                        'let' nelle
+                        versioni più moderne di JavaScript. 'Let' offre un modo leggermente diverso e più sicuro per
+                        creare
+                        variabili, risolvendo alcuni problemi di 'var'.</p>
+
+                <p><strong>Hoisting:</strong> Con 'var', è possibile dichiarare una variabile anche dopo averla
+                        inizializzata,
+                        grazie al meccanismo dell'hoisting, che in JavaScript sposta le dichiarazioni di variabili
+                        all'inizio del
+                        codice. Al contrario, con 'let', se si prova ad utilizzare una variabile prima di dichiararla,
+                        si riceverà
+                        un errore. Questo rende il codice più chiaro e meno confuso.</p>
+
+                <p><strong>Ridichiarazione:</strong> 'Var' permette di ridichiarare la stessa variabile più volte,
+                        mentre 'let'
+                        non lo consente. Questo aiuta a ridurre la confusione e a migliorare la leggibilità del codice.
+                </p>
+
+                <p>Per queste ragioni e altre, si raccomanda di utilizzare 'let' piuttosto che 'var' nel codice. A meno
+                        che non
+                        sia necessario scrivere codice per browser molto vecchi, non c'è più motivo di usare 'var', dato
+                        che tutti i
+                        browser moderni supportano 'let' dal 2015.</p>
+
+                <p>Una volta che una variabile è stata inizializzata con un valore, è possibile cambiarlo assegnandogli
+                        un
+                        valore diverso. Quando si nomina una variabile, si dovrebbero usare caratteri latini (0-9, a-z,
+                        A-Z) e
+                        l'underscore, evitare di usare underscore all'inizio e numeri all'inizio del nome, e non
+                        utilizzare parole
+                        riservate di JavaScript come 'var', 'function', 'let', 'for'. È consigliabile usare la notazione
+                        camel case
+                        (es. 'myAge', 'initialColor'). Ricorda che le variabili sono sensibili alle maiuscole/minuscole
+                        e che è
+                        importante scegliere nomi di variabili intuitivi e descrittivi.</p>
+        </div>
+        <div class="panel">
+                <p><strong>Esempio di Hoisting:</strong></p>
+                <div class="code-container">
+                        <button id="test" class="copy-btn" onclick="copyCode()" title="Click to copy in your clipboard">    
+                                <i class="fas fa-copy"></i></button>
+                        <pre><code>
+console.log(myVar); // undefined
+var myVar = 5;
+console.log(myVar); // 5
+
+console.log(myLet); // ReferenceError: myLet is not defined
+let myLet = 10;
+console.log(myLet); // 10
+</div>
+<p>Spiegazione:
+
+    Nel caso di var, la variabile myVar viene portata in alto (hoisting), quindi non genera un errore quando viene utilizzata prima della sua dichiarazione, ma restituisce undefined.
+    Nel caso di let, l'uso di myLet prima della sua dichiarazione genera un errore (ReferenceError).</p>
+</code></pre>
+
+                </div>
+
+
+                <div class="panel">
+                        <img src="" alt="">
+                        <h2>Il Ciclo For in JavaScript</h2>
+                        <p>Il ciclo <code>for</code> è un costrutto di programmazione usato per ripetere un blocco di
+                                codice più volte. È composto da tre parti: inizializzazione, condizione, e incremento.
+                        </p>
+                        <div class="code-container">
+                                <button id="test" class="copy-btn" onclick="copyCode()" title="Click to copy in your clipboard">    
+                                        <i class="fas fa-copy"></i></button>
+                                <pre><code>
+        for (let i = 0; i < 5; i++) {
+            console.log(i); 
+        }
+        // Stampa i numeri da 0 a 4
+        </code></pre>
+                        </div>
+                        <p>Questo esempio mostra come un ciclo <code>for</code> può stampare numeri da 0 a 4.</p>
+                </div>
+                <!-- Sezione Array -->
+                <div class="panel">
+                        <h2>Array in JavaScript</h2>
+                        <p>Gli array sono collezioni di elementi che possono essere di qualsiasi tipo. Gli elementi in
+                                un array sono ordinati e accessibili tramite un indice numerico.</p>
+                        <div class="code-container">
+                                <button id="test" class="copy-btn" onclick="copyCode()" title="Click to copy in your clipboard">    
+                                        <i class="fas fa-copy"></i></button>
+                                <pre><code>
+        let frutti = ["mela", "banana", "arancia"];
+        console.log(frutti[0]); // Stampa "mela"
+        </code></pre>
+                        </div>
+                        <p>In questo esempio, <code>frutti</code> è un array che contiene tre elementi. L'elemento
+                                "mela" può essere accesso tramite l'indice 0.</p>
+                </div>
+
+            <!-- Finestra di dialogo personalizzata (inizialmente nascosta con CSS) -->
+<div id="myModal" class="modal">
+        <!-- Contenuto della finestra di dialogo -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Testo copiato nella clipboard</p>
+        </div>
+      </div>
+      
+
+
+                <!-- link to js -->
+                <script src="js/main.js"></script>
+</body>
+
+</html>

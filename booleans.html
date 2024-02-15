@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booleans</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Booleans</h1>
+    </header>
+    <section class="javascript-booleans">
+        <h2>Booleani e Operatori di Confronto in JavaScript</h2>
+
+        <p><strong>Booleani:</strong> I booleani sono un tipo di dato in JavaScript che può essere <code>true</code> o
+            <code>false</code>.
+        </p>
+        <div class="code-container">
+            <pre><code>
+        true
+        false
+        </code></pre>
+        </div>
+
+        <p><strong>Operatori di Confronto:</strong> Utilizzati per confrontare valori.</p>
+        <div class="code-container">
+            <pre><code>
+        console.log(3 < 5); // Stampa true
+        console.log(3 === 5); // Stampa false
+        console.log(3 === 3); // Stampa true
+        console.log(3 == '3'); // Stampa true, ma non è buona pratica perché non controlla il tipo
+        console.log(3 !== 5); // Stampa true
+        console.log(3 > 5); // Stampa false
+        </code></pre>
+        </div>
+
+        <p>Gli operatori di confronto hanno la stessa precedenza degli operatori aritmetici:</p>
+        <ul>
+            <li><code>&lt;</code> minore di</li>
+            <li><code>&gt;</code> maggiore di</li>
+            <li><code>&lt;=</code> minore o uguale a</li>
+            <li><code>&gt;=</code> maggiore o uguale a</li>
+            <li><code>===</code> uguale a</li>
+            <li><code>!==</code> non uguale a</li>
+        </ul>
+
+        <p>Esempi:</p>
+        <div class="precode-div">
+            <pre><code>
+        console.log(5 === '5.00'); // false (tipi diversi)
+        </code></pre>
+        </div>
+        <h3>Istruzioni If e Else</h3>
+        <p>Le istruzioni <code>if</code> e <code>else</code> vengono utilizzate per eseguire codice solo se una
+            condizione è vera (o falsa).</p>
+        <div class="precode-div">
+            <pre><code>
+        if(false) {
+            console.log('Questo codice viene eseguito se la condizione è vera');
+        } else {
+            console.log('Questo codice viene eseguito se la condizione è falsa');
+        }
+    
+        if(30 >= 16) {
+            console.log('puoi guidare un'auto');
+        }
+    
+        const age = 15;
+        if(age >= 16) {
+            console.log('puoi guidare un'auto');
+            console.log('congratulazioni');
+        } else if(age >= 14) {
+            console.log('Quasi ci sei');
+        } else {
+            console.log('non puoi guidare un'auto');
+        }
+        </code></pre>
+        </div>
+        <p><strong>Regole di Sintassi per le istruzioni if...else:</strong></p>
+        <ul>
+            <li><code>if</code> e <code>else</code> devono essere in minuscolo.</li>
+            <li>Deve esserci uno spazio tra <code>if</code> e la condizione.</li>
+            <li>Deve esserci uno spazio tra <code>else</code> e la parentesi graffa aperta.</li>
+            <li>Deve esserci uno spazio tra la parentesi graffa chiusa e <code>else</code>.</li>
+            <li>Deve esserci uno spazio tra <code>else</code> e la parentesi graffa aperta per il blocco di codice
+                <code>else</code>.
+            </li>
+        </ul>
+    </section>
+
+    <!-- creare due input per inserire first name ed age e stampare il nome e l'età in console-->
+
+    <section class="exercise">
+        <h2>Esercizio</h2>
+        <p>Scrivi un programma che chiede all'utente di inserire il suo nome e la sua età. Se l'età è maggiore o uguale
+            a 18, stampa il nome e l'età in console. Se l'età è minore di 18, stampa un messaggio di errore in console.
+        </p>
+        <div class="precode-div">
+            <pre><code>
+        const name = prompt('Inserisci il tuo nome');
+        const age = prompt('Inserisci la tua età');
+        if(age >= 18) {
+            console.log(name);
+            console.log(age);
+        } else {
+            console.log('Errore');
+        }
+        </code></pre>
+        </div>
+        <div>
+            <h2>Falsy value</h2>
+            <p>
+            <p>In JavaScript, i "falsy values" sono quei valori che, quando convertiti a booleano, diventano
+                <code>false</code>. Questi valori sono particolarmente importanti nelle espressioni condizionali, dove
+                automaticamente determinano il flusso delle istruzioni <code>if</code>, <code>while</code>, ecc. I falsy
+                values in JavaScript sono:</p>
+            <ol>
+                <li><code>false</code>: Il valore booleano che rappresenta il falso.</li>
+                <li><code>0</code> e <code>-0</code>: Lo zero (sia positivo che negativo).</li>
+                <li><code>""</code> (stringa vuota): Una stringa senza alcun carattere.</li>
+                <li><code>null</code>: Indica un'intenzionale assenza di qualsiasi valore di oggetto.</li>
+                <li><code>undefined</code>: Indica che una variabile non è stata assegnata a nessun valore.</li>
+                <li><code>NaN</code>: Significa "Not-a-Number" e di solito si ottiene come risultato di operazioni
+                    matematiche non valide.</li>
+            </ol>
+            <p>È importante notare che anche se questi valori sono tutti considerati falsy, non sono equivalenti tra
+                loro. In particolare, <code>null</code> e <code>undefined</code> sono spesso fonte di confusione, ma
+                hanno significati e usi differenti:</p>
+            <ul>
+                <li><strong><code>null</code></strong>: È un valore assegnato che rappresenta l'assenza intenzionale di
+                    un valore di oggetto. Viene usato quando si vuole indicare che una variabile dovrebbe contenere un
+                    oggetto, ma che attualmente non lo fa. Ad esempio, potresti assegnare <code>null</code> a una
+                    variabile che conterrà un riferimento a un oggetto, prima di assegnare effettivamente quell'oggetto.
+                </li>
+                <li><strong><code>undefined</code></strong>: È una proprietà globale che rappresenta il valore di una
+                    variabile non inizializzata. Quando dichiari una variabile senza assegnarle un valore, il suo valore
+                    di default è <code>undefined</code>. Inoltre, una funzione che non ha un valore di ritorno esplicito
+                    restituisce <code>undefined</code>.</li>
+            </ul>
+            <p>Anche se entrambi indicano l'assenza di un valore, la differenza principale è che <code>null</code> è un
+                assegnamento intenzionale, mentre <code>undefined</code> indica che una variabile è stata dichiarata ma
+                non definita con un valore specifico.</p>
+
+        </div>
+        <div>
+            <h2>Truthy value</h2>
+            <p>In JavaScript, i "truthy values" sono quei valori che, quando convertiti a booleano, diventano
+                <div class="code-container"><code>true</code>.</div> Questi valori sono importanti perché determinano il flusso delle istruzioni
+                condizionali come <code>if</code>, <code>while</code>, ecc. Praticamente tutti i valori sono considerati
+                truthy ad eccezione dei falsy values (cioè <code>false</code>, <code>0</code>, <code>-0</code>,
+                <code>""</code> (stringa vuota), <code>null</code>, <code>undefined</code>, <code>NaN</code>). Alcuni
+                esempi di truthy values includono:</p>
+            <ol>
+                <li><code>true</code>: Il valore booleano che rappresenta il vero.</li>
+                <li><code>"hello"</code>: Una stringa non vuota.</li>
+                <li><code>1</code>, <code>-1</code>, <code>2</code>, ...: Numeri non zero (positivi o negativi).</li>
+                <li><code>[]</code>: Un array vuoto.</li>
+                <li><code>{}</code>: Un oggetto vuoto.</li>
+                <li>Qualsiasi altro oggetto, funzione, o array non vuoto.</li>
+            </ol>
+            <p>È importante ricordare che in JavaScript quasi tutto è truthy ad eccezione dei pochi valori che sono
+                esplicitamente falsy. Questo significa che se usi un valore in un contesto booleano come una condizione
+                di un'istruzione <code>if</code>, sarà interpretato come <code>true</code> a meno che non sia uno dei
+                falsy values.</p>
+
+
+        </div>
+
+
+
+        </div>
+
+
+
+
+        <!-- link to js -->
+        <script src="js/booleans.js"></script>
+</body>
+
+</html>

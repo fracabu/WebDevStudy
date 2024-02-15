@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/arrays-and-loops.css">
+
+
+  <title></title>
+</head>
+
+<body>
+  <header class="panel">
+    <h1 class="js-header-title header-title"> </h1>
+  </header>
+
+  <div id="dataContainer">
+
+
+
+    <div class="container">
+      <p>
+        L'array è un altro tipo di valore in javascript rappresenta una lista di valori a cui posso accedere e che posso
+        modificare.
+        Per creare un array si usano le parentesi quadre e all'interno inserisco una lista di valori e poi li salvo in
+        una
+        variabile.
+      </p>
+      <button class="js-example-btn btn" data-target="example1">Esempio</button>
+      <div class="container">
+       
+        <code id="example1" class="js-code">
+          [10, 20, 30]; <br>const myArray = [10, 20, 30]; <br>console.log(myArray);</code> <br>
+        </code>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>
+        E' possibile accedere agli elementi degli array attraverso l'indice che parte da 0 quindi per stampare il primo
+        elemento dell'array dovrò stampare l'elemento con indice [0]. <br>
+      </p>
+      <!-- <div class="d-flex">
+        <button onclick="copyCode()" class="btn">copy</button>
+      </div> -->
+      <code class="js-code">
+          console.log(myArray[0]); // Stampa il primo elemento (10).
+        </code>
+    </div>
+
+    <div class="container">
+      <p> E' possibile modificare l'elemento di un array sempre attraverso l'indice. <br>
+        Esempio: <br></p>
+      <!-- <div class="d-flex">
+        <button onclick="copyCode()" class="btn">copy</button>
+      </div> -->
+      <code>
+        myArray[0] = 99; <br>
+        console.log(myArray) // Stampa [99, 20, 30];
+        </code>
+    </div>
+
+    <div class="container">
+      <p>
+        Dentro un array è possibile inserire qualsiasi tipo di valore numeri, stringhe, booleani e oggetti. <br>
+        Esempio: <br>
+      </p>
+      <!-- <div class="d-flex">
+        <button onclick="copyCode()" class="btn">copy</button>
+      </div> -->
+      <code>
+          let mixedValuesArray = [ <br>1,<br> 'string', <br>true, <br>{name: 'Francesco'}, <br>]; <br>
+console.log(mixedValuesArray) 
+        </code>
+    </div>
+    <div class="container">
+      <p>
+        L'array è anche un valore e quindi puà essere salvato dentro una variabile <br>
+        Esempio: <br>
+        Dentro questo array precedentemente creato salviamo un altro array con due numeri in questo caso
+        l'array diventa un oggetto e può essere trattata come tale in js.
+        Digitando console.log(typeof) è possibile vedere che tipo di valore abbiamo. In questo caso il valore sarà
+        object.
+      </p>
+
+      <!-- <div class="d-flex">
+        <button onclick="copyCode()" class="btn">copy</button>
+      </div> -->
+      <code>
+        mixedValuesArray = [1, 'string', true, {name: 'Francesco'},[1, 2]]; <br>
+        console.log(typeof [1,2]); // Stampa object <br>
+        console.log(Array.isArray([1,2])); // verifica se [1, 2] è un array e stampa true;
+      </code>
+    </div>
+
+
+
+    <div class="container">
+      <h2> Array Methods</h2>
+      <p>
+        Esistono molti metodi per gli array che consentono di :
+        <li>aggiungere e rimuovere elementi : .push(), .pop(), .shift(), .unshift()</li>
+        <li>modificare elementi: .splice()</li>
+        <li>slicing e combining: .slice(), .concat(),</li>
+        <li>iterazioni: .forEach()</li>
+        <li>ricerca dentro un Array: .indexOf(), .lastIndex(), .includes(), .find(), .findIndex(), .fiter()</li>
+        <li>trasforma un array: .map(), .sort(), .reverse(), .split(), .reduce()</li>
+        <li>controllare se è un array: Array.isArray()</li>
+      </p>
+      < class="container">
+        <h4>.pop()</h4>
+        <p>rimuove l'ultimo elemento dall'array</p>
+
+        <code>
+          let fruits = ["mela","pera","banana","ananas","fragola"]; // creo array fruits <br>
+    console.log(fruits) <br>
+    let removeItem = fruits.pop();//applico metodo all'array e lo salvo <br> 
+    console.log("Elemento rimosso:", removeItem); // Elemento rimosso: fragola <br>
+    console.log("Array dopo pop():", fruits);  // Array dopo pop(): ["mela","pera","banana","ananas"]
+        </code>
+
+
+    </div>
+    <div class="container">
+      <h4>.push()</h4>
+      <p>aggiunge un elemento alla fine dell'array</p>
+      <code>
+          let addItem = fruits.push("albicocca"); // aggiungo albicocca all'array
+console.log("Elemento aggiunto:", fruits[fruits.length-1]); // stampo l'ultimo elemento dell'array
+console.log("Array dopo push()",  fruits); // stampo array aggiornato
+        </code>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  </div>
+
+
+  <script src="js/arraysAndLoops.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

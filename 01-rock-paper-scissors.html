@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock Paper Scissors</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="special-title">Rock Paper Scissors</h1>
+    </header>
+
+    <div class="btn-container">
+        <button class="btn" onclick="
+        playGame('Rock');
+        ">Rock</button>
+
+        <button class="btn" onclick="
+        playGame('Paper');    
+        ">Paper</button>
+
+        <button class="btn" onclick="
+         playGame('Scissors');       
+        ">Scissors</button>
+    </div>
+
+    <div>
+        <p>
+            Versione del gioco con la funzione pickComputerMove() che restituisce un valore casuale tra Rock, Paper e
+            Scissors e che ci consente di riutilizzare il codice. In questa versione al clik sul button viene chiamata
+            la funzione.
+            La varialbile let computerMove è dichiarata all'interno della funzione e quindi non è accessibile al di
+            fuori di essa.
+
+
+        </p>
+
+        <div class="code-container">
+            <h2>Esempio di funzione con variabile globale</h2>
+            <code>
+            let computerMove = ''; <br>
+            function pickComputerMove() { <br>
+                const randomNumber = (Math.random());
+    
+                if(randomNumber >= 0 && randomNumber < 1 / 3){ computerMove='Rock' ; } else if(randomNumber>=1 / 3 &&
+                    randomNumber < 2 / 3){ computerMove='Paper' ; } else if(randomNumber>= 2 / 3 && randomNumber < 1){
+                            computerMove='Scissors' ; } }
+            </code>
+        </div>
+        <div class="code-container">
+            <h2>Esempio di funzione con variabile utilizzando il return e salvando il valore dentro una variabile</h2>
+            <code>
+                function pickComputerMove() { <br>
+                    const randomNumber = (Math.random()); <br>
+                    let computerMove = ''; <br>
+                    if(randomNumber >= 0 && randomNumber < 1 / 3){
+                     computerMove ='Rock'; <br>
+                    } else if(randomNumber >=1 / 3 && randomNumber < 2 / 3){
+                     computerMove = 'Paper'; <br>
+                    } else if(randomNumber >= 2 / 3 && randomNumber < 1){
+                         computerMove = 'Scissors'; <br>
+                    }
+                    return computerMove;
+                }
+            </code>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <!-- link to js -->
+    <script src="js/rockPaperScissors.js"></script>
+</body>
+
+</html>

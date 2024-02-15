@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Functions</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="special-title">Functions</h1>
+    </header>
+  
+    <div class="code-container">
+        <code>
+            function convertFahrenheit(celsius) { <br>
+                return (celsius * 9 / 5) + 32;
+            } <br>
+            
+            // dichiaro una variabile e le assegno un valore 
+            <br>
+            let tempCelsius = 25; <br>
+            // il risultato della funzione viene salvato nella variabile tempFahrenheit
+            <br>
+            let tempFahrenheit = convertFahrenheit(tempCelsius); <br>
+            // stampa il risultato in console
+            <br>
+            console.log(tempCelsius + "°C è equivalente a " + tempFahrenheit + "°F");
+        </code>
+    </div>
+    <div class="code-container">
+        <code>
+            function convertCelsius(fahrenheit){ <br>
+                return (fahrenheit -32) * 5 / 9; 
+            } <br>
+            tempFahrenheit = 86; <br>
+            
+            tempCelsius = convertCelsius(tempFahrenheit); <br>
+            console.log(tempFahrenheit + "°F è equivalente a " + tempCelsius + "°C");
+        </code>
+    </div>
+    <div class="code-container">
+        <code>
+            function convertTemperature(degrees, unit) { <br>
+                if (unit === 'C') { <br>
+                    // Converti da Celsius a Fahrenheit 
+                    <br>
+                    let fahrenheit = convertFahrenheit(degrees); <br>
+                    return degrees + "°C è equivalente a " + fahrenheit + "°F"; <br>
+                } else if (unit === 'F') { <br>
+                    // Converti da Fahrenheit a Celsius
+                    <br>
+                    let celsius = convertCelsius(degrees); <br>
+                    return degrees + "°F è equivalente a " + celsius + "°C"; <br>
+                } else {
+                    return "Unità non riconosciuta. Usa 'C' per Celsius o 'F' per Fahrenheit.";
+                } <br>
+            }
+        </code>
+    </div>
+
+
+
+   
+
+
+    <!-- link to js -->
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+  
+    
+}
+.retro-text {
+    font-family: 'Press Start 2P', cursive;   
+    font-size: 20px; /* o la dimensione che preferisci */
+    line-height: 1;
+}
+
+
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #333;
+    padding: 20px;
+}
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 20px;
+}
+.header{
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    
+  
+    justify-content: space-between;
+    
+}
+.special-title{
+    color: yellow;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+  
+}
+
+
+
+
+
+.link_list{
+    list-style-type: none;
+    padding-left: 0;
+  margin-left: 0;
+  font-size: 22px;
+}
+
+
+.btn-container{
+    text-align: center;
+    margin: 20px;
+}
+
+.btn{
+    background-color: yellow;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    /* Aggiungendo ombre multiple */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease; /* Transizione fluida per l'hover */
+}
+
+/* Stile quando il mouse è sopra il pulsante */
+.btn:hover {
+    /* Riduzione dell'ombra per l'effetto premuto */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Leggera trasformazione per l'effetto premuto */
+    transform: translateY(-2px);
+}
+
+
+.btn:active {
+    /* Ulteriore riduzione dell'ombra e trasformazione per l'effetto premuto */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+
+.code-container {
+    position: relative;
+    background-color: #0e0e0e; /* Sfondo leggero per il codice */
+    border: 1px solid #ccc; /* Bordo intorno al contenitore */
+    border-radius: 8px; /* Angoli arrotondati */
+    padding: 20px; /* Spazio intorno al codice */
+    margin: 20px 0; /* Spazio esterno al contenitore */
+    overflow: auto; /* Permette lo scorrimento se il codice è lungo */
+
+}
+
+.code-container code {
+    font-family: 'Courier New', monospace; /* Stile del font per il codice */
+    color: lime; /* Colore del testo del codice */
+    font-size: 22px;
+}
+
+.code-container button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: yellow; /* Colore di sfondo del pulsante */
+    color: black; /* Colore del testo del pulsante */
+    border-radius: 5px; /* Angoli arrotondati del pulsante */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra il pulsante */
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.code-container button:hover {
+    background-color: black; /* Colore di sfondo del pulsante al passaggio del mouse */
+    color: yellow;
+}
+
+
+.panel{
+    background-color: yellow;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px;
+    /* Aggiungendo ombre multiple */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease; /* Transizione fluida per l'hover */
+    font-family: 'Press Start 2P', cursive; 
+}
+
+.panel-link{
+    background-color: yellow;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px;
+    /* Aggiungendo ombre multiple */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease; /* Transizione fluida per l'hover */
+    font-family: 'Press Start 2P', cursive; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Stile base per i coriandoli */
+.coriandolo {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0;
+  animation: caduta 2s linear forwards;
+}
+
+/* Anima la caduta dei coriandoli */
+@keyframes caduta {
+  0% { top: -10px; }
+  100% { top: 100%; }
+}
+
+.custom-input{
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.is-subscribed{
+    color: white;
+    background-color: red;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.title-color{
+    color: red;
+}
+
+.js-red-title{
+    color: red;
+}
+
+
+img{
+    font-size: 10px;
+   
+}
+
+
+/* Stile per la finestra di dialogo */
+.modal {
+    display: none; /* Nascondi la finestra di dialogo di default */
+    position: fixed; /* Rimanere in posizione fissa */
+    z-index: 1; /* Sita sopra tutto */
+    left: 0;
+    top: 0;
+    width: 100%; /* Larghezza piena */
+    height: 100%; /* Altezza piena */
+    overflow: auto; /* Abilita lo scroll se necessario */
+    background-color: rgb(0,0,0); /* Colore sfondo */
+    background-color: rgba(0,0,0,0.4); /* Sfondo nero con opacità */
+  }
+  
+  /* Contenitore del contenuto della finestra di dialogo */
+  .modal-content {
+    background-color: yellow;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid black;
+  }
+  
+  /* Il bottone per chiudere la finestra di dialogo */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

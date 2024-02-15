@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="special-title">DOM</h1>
+    </header>
+    <!-- <button class="btn" onclick="printMessage()">hello</button>
+    <button class="btn" onclick="printMessage()">test</button> -->
+    <div class="panel d-flex">
+        <h3 class="js-title"></h3>
+        <button class="js-button btn subscribe-btn" onclick="subscribe()">Subscribe</button>
+        <p class="js-paragraph"></p>
+    </div>
+
+    <div>
+        <p>Il DOM (Document Object Model) è un altro built-in object come console.log, stringify, Math sono oggetti di
+            cui js è provvisto e che ci fornisce.
+            Tramite la dot notation possiamo accedere alle proprietà dell'oggetto document per esempio per cambiare il
+            contenuto del body:
+            <code> document.body.innerHTML = 'Test'</code>
+            L'oggetto document rappresenta il model della web page e come tutti gli oggetti di js ha le sue proprietà
+            tipo 'title' o 'body'
+            che sono accessibili tramite dot notation e l'oggetto document è direttamente collegato alla web page.
+        </p>
+    </div>
+
+    <section id="dom-methods" class="code-container">
+        <h2 class="special-title">Metodi del DOM Principali</h2>
+        <h3 class="special-title">Selezionare Elementi</h3>
+        <ul>
+            <li><code>document.getElementById(id)</code></li>
+            <li><code>document.getElementsByTagName(name)</code></li>
+            <li><code>document.getElementsByClassName(name)</code></li>
+            <li><code>document.querySelector(selector)</code></li>
+            <li><code>document.querySelectorAll(selector)</code></li>
+        </ul>
+
+        <h3 class="special-title">Modificare Elementi</h3>
+        <ul>
+            <li><code>element.innerHTML</code></li>
+            <li><code>element.setAttribute(name, value)</code></li>
+            <li><code>element.classList.add(class)</code>, <code>element.classList.remove(class)</code></li>
+        </ul>
+
+        <h3 class="special-title">Creare e Rimuovere Elementi</h3>
+        <ul>
+            <li><code>document.createElement(tagName)</code></li>
+            <li><code>element.appendChild(child)</code></li>
+            <li><code>element.removeChild(child)</code></li>
+        </ul>
+
+        <h3 class="special-title">Gestione degli Eventi</h3>
+        <ul>
+            <li><code>element.addEventListener(event, function)</code></li>
+            <li><code>element.removeEventListener(event, function)</code></li>
+        </ul>
+
+        <h3 class="special-title">Navigazione e Manipolazione del DOM</h3>
+        <ul>
+            <li><code>element.childNodes</code></li>
+            <li><code>element.parentNode</code></li>
+        </ul>
+    </section>
+
+
+
+    <!-- link to js -->
+    <script src="js/dom.js"></script>
+</body>
+
+</html>

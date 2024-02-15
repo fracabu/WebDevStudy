@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Objects</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="special-title">Objects</h1>
+    </header>
+    <div>
+        <p>
+            Gli oggetti servono per raggruppare valori multipli insieme e mantenere il codice ben organizzato.
+            Nell'esempio viene creato un oggetto 'product' che ha due proprietà : 'name' e 'price' con due tipi di 
+            valore diverso (stringa 'socks' e numero 1090).
+            E' possibile aggiungere una nuova proprietà come nell'esempio assegnandole un altro tipo di valore (booleano)
+            E' possibile cancellare una proprietà con la funzione delete.
+        </p>
+    </div>
+  
+    <div class="code-container">
+        <button class="copy-btn" onclick="copyCode()">copy</button>
+        <code>
+            
+            const product = { <br>
+                name : 'socks', <br>
+                price: 1090 <br>
+            }; <br>
+            console.log(product); <br> 
+            console.log(product.name); <br>
+            console.log(product.price); <br>
+            product.newProperty = true; <br>
+console.log(product) // stampa "{name: 'cotton socks', price: 1090 , newProperty: true}" <br>
+delete product.newProperty; <br>
+console.log(product); // stampa "{name: 'cotton socks', price: 1090}"
+        </code>
+    </div>
+    
+
+
+
+   
+
+
+    <!-- link to js -->
+    <script src="js/objects.js"></script>
+</body>
+
+</html>

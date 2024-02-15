@@ -1,0 +1,96 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+header{
+    text-align: center;
+    background-color: rgb(33, 238, 170);
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease; 
+    font-family: 'Press Start 2P', cursive; 
+    
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: aliceblue;
+    
+}
+
+.container{
+    background-color: rgb(33, 238, 170);
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease; 
+    font-family: 'Press Start 2P', cursive; 
+    
+    
+}
+
+.btn{
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+   
+   
+   
+   
+    /* Aggiungendo ombre multiple */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease; /* Transizione fluida per l'hover */
+}
+
+
+
+/* Stile quando il mouse è sopra il pulsante */
+.btn:hover {
+    /* Riduzione dell'ombra per l'effetto premuto */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Leggera trasformazione per l'effetto premuto */
+    transform: translateY(-2px);
+}
+
+
+.btn:active {
+    /* Ulteriore riduzione dell'ombra e trasformazione per l'effetto premuto */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+
+input{
+    padding: 5px;
+}
+
+
+/* helpers */
+
+.d-flex{
+    display: flex;
+   justify-content: flex-end;
+}

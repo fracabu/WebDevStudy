@@ -1,0 +1,142 @@
+body {
+    /* background- color con linear gradient */
+
+    /* Grigio chiaro per un aspetto pulito */
+    font-family: 'Roboto', sans-serif;
+    /* Font più moderno e leggibile */
+    color: #333;
+    /* Colore del testo scuro per un buon contrasto */
+    margin: 0;
+    padding: 0;
+}
+
+.currency-container,
+.panel,
+#strengthChartContainer,
+#selectedPairContainer {
+    background-color: white;
+    /* Sfondo bianco traslucido */
+    backdrop-filter: blur(10px);
+    /* Effetto sfocatura per il vetro */
+    -webkit-backdrop-filter: blur(10px);
+    /* Per supporto su Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* Bordo sottile per definire i bordi */
+}
+
+/* Aggiornamenti al resto del CSS per armonizzare con l'effetto vetro */
+currency-container,
+.panel {
+    color: #333;
+    /* Mantenere il testo scuro per contrasto */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    /* Adattamento per leggibilità */
+    margin: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    /* Font moderno e leggibile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+.currency-container p {
+    margin: 0;
+}
+
+.panel {
+    background-color: #dbdbdb;
+    /* Uniformità con .currency-container */
+    color:black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-title {
+    font-family: 'Roboto', sans-serif;
+}
+
+#strengthChartContainer,
+#selectedPairContainer {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.1);
+     /* dai un effetto trasparente vetro */
+    background-color: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    
+ 
+
+
+}
+
+.app-container {
+    /* crea una layout a tre colonne  */
+    display: grid;
+    grid-template-columns: 0.5fr 1fr ;
+    gap: 20px;
+    padding: 20px;
+    color: black;
+    /* dai un effetto trasparente vetro */
+
+
+
+
+
+    /* rendi la prima colonna fixed */
+    grid-template-areas: "currency-panel currency-panel currency-panel"
+        "currency-panel currency-panel currency-panel"
+        "currency-panel currency-panel currency-panel";
+
+
+
+
+
+
+
+}
+
+
+
+.glass-panel {
+  /* From https://css.glass */
+background: rgba(255, 253, 253, 1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.6px);
+-webkit-backdrop-filter: blur(19.6px);
+border: 1px solid rgba(255, 253, 253, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid red;
+}
+
